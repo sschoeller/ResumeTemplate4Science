@@ -1,0 +1,98 @@
+\def\Manager{Hiring Manager}
+\def\EmployerAddr{Catalent}
+
+\documentclass[10pt]{letter}
+\usepackage{geometry}
+\geometry{paper=letterpaper, top=-1.5in, bottom=1in, left=1in, right=1in}
+
+\usepackage[sfdefault, light]{roboto}
+% Some of the article customisations are relevant for this class
+
+\name{Scott Schoeller} % To be used for the return address on the envelope
+\date{}
+\signature{} % Goes after the closing (ie at the end of the letter, with space for a signature)
+\address{}
+% Alternatively, these may be set on an individual basis within each letter environment.
+
+%\makelabels % this command prints envelope labels on the final page of the document
+% Special colors for headings
+\usepackage[dvipsnames]{xcolor}
+
+%\definecolor{hcolor}{Blue}
+\def\headingcolor{\color{ProcessBlue}}
+
+\input{commondefs.tex}
+
+\begin{document}
+\begin{letter}{}
+\begin{center}
+\Huge
+\textbf{\headingcolor{\Name\postNm
+}}
+	
+	
+	% JOB FAIR VERSION OF NAME
+	% NOT ATS Friendly
+	%\begin{equation*}
+	%\headingcolor
+	%\setlength{\abovedisplayskip}{-0.5in}
+	%\mathbf{\mathscr{SCOTT\ J.\ SCHOELLER\postNm
+	%}
+	%}
+	%\setlength{\belowdisplayskip}{-2pt}
+	%\end{equation*}
+	\large{
+		%Janesville, WI\\
+		\Phone \ $|$ \Email \ $|$ 
+		www.linkedin.com/in/\Usrnm \\  
+		%Data Analyst $|$ Software Developer $|$ Technical Communicator\\
+		\Postitle \\
+	}
+\headingcolor{\rule{\linewidth}{1pt}} \normalsize
+\end{center}
+
+\begin{flushleft}
+	% DATE
+\opening{} % eg Hello.
+\vspace{-30pt}
+\Manager
+\ \\
+\EmployerAddr
+\ \\
+\ \\
+Dear \Manager,
+
+\par{
+I am a well-rounded professional applying for your \Postitle \ position. I majored in Chemistry, minored in Environmental Studies and added a Computer Science minor in preparation for my master's degree in Computer Science.} %completed experiences in scientific communicaitons I am very detail-oriented and I also take into account the big picture aspects of software development. I design systems from the top-down and then work out the details. Another example of where I was detail-oriented was during my master's thesis. I ultimately designed a novel space-saving algorithm that utilized compression into less computer bits within memory than the original data. 
+\par{
+I am very thorough regarding analyzing data and writing reports. This skill was essential for my chemistry lab reports, independent study research and computer science thesis.	
+}
+
+%\par{
+%My Autism Spectrum Disorder has contributed to those successes. 
+%A blend of critical thinking, generation of novel solutions and attention to details are what I do best. In my master's thesis, a novel memory space-saving technique was utilized.} 
+
+\par{During my graduate studies, I received recognition from Dr. Donald Knuth, an author of computer science books who has a long-standing challenge considered to be one of the first bug bounty programs. I earned three Knuth Reward Checks for finding errors and suggesting a clarification regarding The Art of Computer Programming, Selected Papers on Computer Science and Selected Papers on Design of Algorithms. Additionally, I have co-presented a PowerPoint slideshow on this experience.
+}
+%\par{
+%I have experience in leadership, tutoring and research roles. Those include being Vice President of the UW--Whitewater chapter of DREAM, tutoring within UW--Whitewater for the Computer Science Department and the Center for Students with Disabilities, being a TA and training co-workers in research techniques. I was co-published three times due to work on chemokines, DAF-16a from B. Malayi, where I also received credit for the structure of the DNA-binding domain, and a cold-shock-like protein from R. rickettsii.
+%}
+
+%\par{I strongly support the core value of giving back and I have volunteered for various organizations. These include the Wisconsin Science Festival, Salvation Army, Rock County Humane Society, Rotary Gardens, Milton Public Library and Milton Senior Center.
+%}
+
+\par{
+I would greatly appreciate the opportunity to speak with you about the \Postitle \ role. Thank you for your time and consideration.
+}
+
+%\closing{Regards,} % eg Regards,
+Regards,\\
+\ \\
+Scott Schoeller\\
+%\cc{} % people this letter is cc-ed to
+\encl{R\`esum\`e} % list of anything enclosed
+%\ps{} % any post scriptums. ``PS'' labels must be put in manually
+\end{flushleft}
+
+\end{letter}
+\end{document}
